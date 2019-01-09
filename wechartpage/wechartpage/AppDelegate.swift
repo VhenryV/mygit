@@ -18,17 +18,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         let UnserNav = UINavigationController(rootViewController: UnserInfoViewController())
         let homeNav = UINavigationController(rootViewController: HomeViewController())
-        
-        UnserNav.tabBarItem.title = "UnserInfo"
-        homeNav.tabBarItem.title = "HomePage"
+        let nameNav = UINavigationController(rootViewController: NameViewController())
+        let lookNav = UINavigationController(rootViewController: LookedViewController())
+        UnserNav.tabBarItem.title = "我"
+        nameNav.tabBarItem.title = "通讯录"
+        lookNav.tabBarItem.title = "发现"
+        homeNav.tabBarItem.title = "微信"
         
         
         UnserNav.tabBarItem.image = UIImage(named: "userinfo")
+        nameNav.tabBarItem.image = UIImage(named: "tongxunlu")
+        lookNav.tabBarItem.image = UIImage(named: "faxian")
         homeNav.tabBarItem.image = UIImage(named: "home")
         
         
         let tabBarController = UITabBarController()
-        tabBarController.viewControllers = [homeNav, UnserNav]
+        tabBarController.viewControllers = [homeNav,nameNav,lookNav, UnserNav]
         
         self.window?.rootViewController = tabBarController
         return true

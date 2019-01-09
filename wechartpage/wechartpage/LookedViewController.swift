@@ -1,37 +1,36 @@
 //
-//  HomeViewController.swift
-//  NETdemo
+//  LookedViewController.swift
+//  wechartpage
 //
 //  Created by mac on 2019/1/8.
 //  Copyright © 2019 henry. All rights reserved.
 //
-
 import UIKit
-class UnserInfoViewController: UITableViewController {
+class LookedViewController: UITableViewController {
     var data = [
-        ("A", [("钱包","money.png")]),
-        ("B", [("收藏","save.png"),("相册","picview.png"),("卡包","card.png"),("表情","biaoqing.png")]),
-        ("C", [("设置","setting.png")])
+        ("A", [("朋友圈","pengyouquan.png")]),
+        ("B", [("扫一扫","saoyisao.png"),("摇一摇","yaoyiyao.png")]),
+        ("C", [("看一看","kanyikan.png"),("搜一搜","souyisou.png")]),
+        ("D", [("漂流瓶","piaoliuping.png")]),
+        ("E", [("购物","gouwu.png"),("游戏","youxi.png")]),
+        ("F", [("小程序","xiaochengxu.png")])
     ]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title  = "用户详情页"
         self.view.backgroundColor = .white
+       self.navigationItem.title  = "发现"
         self.tableView = UITableView(frame: UIScreen.main.bounds, style: UITableView.Style.grouped)
         self.tableView.dataSource = self
         self.tableView.delegate = self
         //self.automaticallyAdjustsScrollViewInsets = false
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
-    
-    // 设置tableView有多少个部分
     override func numberOfSections(in tableView: UITableView) -> Int {
         return data.count
     }
     // 设置tableView每个部分的Header的高
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 20
+        return 10
     }
     
     // 设置tableView每个部分Header内容
@@ -56,6 +55,8 @@ class UnserInfoViewController: UITableViewController {
         cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
         let image = UIImage(named: data[indexPath.section].1[indexPath.row].1)
+        //let reSize = CGSize(width: 240, height: 150)
+        //cell.imageView?.image = image?.reSizeImage(reSize)
         cell.imageView?.image = image
         cell.textLabel?.text = data[indexPath.section].1[indexPath.row].0
         return cell
@@ -67,4 +68,3 @@ class UnserInfoViewController: UITableViewController {
     }
     
 }
-
