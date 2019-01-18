@@ -12,4 +12,19 @@
 "Wechart" = "微信";
 "DoneButton" = "完成";
 "BackButton" = "返回";
+"wechatPay" = " 钱包";
+"favorites" = "收藏";
+"posts" = "相册";
+"cards" = "卡包";
+"sticker" = "表情";
+"setting" = " 设置";
+"moments" = "朋友圈";
+"scan" = "扫一扫";
+"shake" = "摇一摇";
+"topstories" = "看一看";
+"search" = "搜一搜";
+"bottle" = "漂流瓶";
+"shop" = "购物";
+"games" = "游戏";
+"miniprogrames" = "小程序";
 

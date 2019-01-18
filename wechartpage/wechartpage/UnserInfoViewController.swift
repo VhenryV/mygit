@@ -9,9 +9,9 @@
 import UIKit
 class UnserInfoViewController: UITableViewController {
     var data = [
-        ("A", [("钱包","money.png")]),
-        ("B", [("收藏","save.png"),("相册","picview.png"),("卡包","card.png"),("表情","biaoqing.png")]),
-        ("C", [("设置","setting.png")])
+        ("A", [(NSLocalizedString("wechatPay", comment: ""),"money.png")]),
+        ("B", [(NSLocalizedString("favorites", comment: ""),"save.png"),(NSLocalizedString("posts", comment: ""),"picview.png"),(NSLocalizedString("cards", comment: ""),"card.png"),(NSLocalizedString("sticker", comment: ""),"biaoqing.png")]),
+        ("C", [(NSLocalizedString("setting", comment: ""),"setting.png")])
     ]
     
     override func viewDidLoad() {

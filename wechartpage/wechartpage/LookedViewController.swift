@@ -8,17 +8,17 @@
 import UIKit
 class LookedViewController: UITableViewController {
     var data = [
-        ("A", [("朋友圈","pengyouquan.png")]),
-        ("B", [("扫一扫","saoyisao.png"),("摇一摇","yaoyiyao.png")]),
-        ("C", [("看一看","kanyikan.png"),("搜一搜","souyisou.png")]),
-        ("D", [("漂流瓶","piaoliuping.png")]),
-        ("E", [("购物","gouwu.png"),("游戏","youxi.png")]),
-        ("F", [("小程序","xiaochengxu.png")])
+        ("A", [(NSLocalizedString("moments", comment: ""),"pengyouquan.png")]),
+        ("B", [(NSLocalizedString("scan", comment: ""),"saoyisao.png"),(NSLocalizedString("shake", comment: ""),"yaoyiyao.png")]),
+        ("C", [(NSLocalizedString("topstories", comment: ""),"kanyikan.png"),(NSLocalizedString("search", comment: ""),"souyisou.png")]),
+        ("D", [(NSLocalizedString("bottle", comment: ""),"piaoliuping.png")]),
+        ("E", [(NSLocalizedString("shop", comment: ""),"gouwu.png"),(NSLocalizedString("games", comment: ""),"youxi.png")]),
+        ("F", [(NSLocalizedString("miniprogrames", comment: ""),"xiaochengxu.png")])
     ]
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
-       self.navigationItem.title  = "发现"
+        self.navigationItem.title  = NSLocalizedString("findOption", comment: "" )
         self.tableView = UITableView(frame: UIScreen.main.bounds, style: UITableView.Style.grouped)
         self.tableView.dataSource = self
         self.tableView.delegate = self

@@ -28,7 +28,7 @@ class HomeViewController: UITableViewController {
         //设置页面的总体背景颜色
         self.view.backgroundColor = .white
         //设置页面的title如果这上面不设置title那页面的title会跟着导航的文字来显示
-        self.navigationItem.title  = "微信"
+        self.navigationItem.title  = NSLocalizedString("Wechart", comment: "")
         //self.tableView = UITableView(frame: UIScreen.main.bounds, style: UITableView.Style.grouped)
         //设置tableView的数据源
         self.tableView.dataSource = self

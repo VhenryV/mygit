@@ -18,7 +18,7 @@ class NameViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
-        self.navigationItem.title  = "通讯录"
+        self.navigationItem.title  = NSLocalizedString("iphoneNumber", comment: "")
         //self.tableView = UITableView(frame: UIScreen.main.bounds, style: UITableView.Style.grouped)
         self.tableView.dataSource = self
         self.tableView.delegate = self

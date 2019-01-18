@@ -58,6 +58,9 @@
 		04870EEC21E4871900E996A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04870EF821E4874400E996A7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		04870EFA21E4876200E996A7 /* UnserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnserInfoViewController.swift; sourceTree = "<group>"; };
+		049A10C421F1AA7600925CC0 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		049A10C521F1AA7700925CC0 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		049A10C621F1AA7700925CC0 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		04AD70C321F16CFF0071F6AD /* detailspage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailspage.swift; sourceTree = "<group>"; };
 		04AD70C521F179BB0071F6AD /* donepage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = donepage.swift; sourceTree = "<group>"; };
 		04AD70D221F181930071F6AD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
@@ -236,6 +239,7 @@
 				en,
 				Base,
 				"zh-Hans",
+				es,
 			);
 			mainGroup = 04870EBE21E4871800E996A7;
 			productRefGroup = 04870EC821E4871800E996A7 /* Products */;
@@ -330,6 +334,7 @@
 			children = (
 				04870ECF21E4871800E996A7 /* Base */,
 				04AD70D221F181930071F6AD /* zh-Hans */,
+				049A10C421F1AA7600925CC0 /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -339,6 +344,7 @@
 			children = (
 				04870ED421E4871900E996A7 /* Base */,
 				04AD70D321F181930071F6AD /* zh-Hans */,
+				049A10C521F1AA7700925CC0 /* es */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -348,6 +354,7 @@
 			children = (
 				04AD70DD21F1828B0071F6AD /* zh-Hans */,
 				04AD70DF21F183630071F6AD /* en */,
+				049A10C621F1AA7700925CC0 /* es */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";

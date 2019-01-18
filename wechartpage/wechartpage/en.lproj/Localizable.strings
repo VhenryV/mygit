@@ -7,8 +7,24 @@
 */
 "Detailstitle"="User infor page";
 "homeMe" = "Me";
-"iphoneNumber" = "IPhone Nimber";
-"findOption" = "Find";
-"Wechart" = "Wechart";
+"iphoneNumber" = "Contacts";
+"findOption" = "Discover";
+"Wechart" = "Chats";
 "DoneButton" = "Done";
 "BackButton" = "back";
+"wechatPay" = " WeChat Pay";
+"favorites" = "Favorites";
+"posts" = "My Posts";
+"cards" = "Cards & Offers";
+"sticker" = "Sticker Gallery";
+"setting" = "Settings";
+"moments" = "Moments";
+"scan" = "Scan";
+"shake" = "Shake";
+"topstories" = "Top Stories";
+"search" = "Search";
+"bottle" = "Message in a Bottle";
+"shop" = "Shop";
+"games" = "Games";
+"miniprogrames" = "Mini Programs";
+
