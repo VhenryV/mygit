@@ -22,7 +22,6 @@ class NameViewController: UITableViewController {
         //self.tableView = UITableView(frame: UIScreen.main.bounds, style: UITableView.Style.grouped)
         self.tableView.dataSource = self
         self.tableView.delegate = self
-        //self.automaticallyAdjustsScrollViewInsets = false
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
     // 设置tableView有多少个部分

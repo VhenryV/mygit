@@ -22,7 +22,6 @@ class LookedViewController: UITableViewController {
         self.tableView = UITableView(frame: UIScreen.main.bounds, style: UITableView.Style.grouped)
         self.tableView.dataSource = self
         self.tableView.delegate = self
-        //self.automaticallyAdjustsScrollViewInsets = false
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -32,7 +31,6 @@ class LookedViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 10
     }
-    
     // 设置tableView每个部分Header内容
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = UIView()
@@ -55,8 +53,6 @@ class LookedViewController: UITableViewController {
         cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
         let image = UIImage(named: data[indexPath.section].1[indexPath.row].1)
-        //let reSize = CGSize(width: 240, height: 150)
-        //cell.imageView?.image = image?.reSizeImage(reSize)
         cell.imageView?.image = image
         cell.textLabel?.text = data[indexPath.section].1[indexPath.row].0
         return cell

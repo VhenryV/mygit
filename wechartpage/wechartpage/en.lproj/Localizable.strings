@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  wechartpage
+
+  Created by mac on 2019/1/18.
+  Copyright © 2019 henry. All rights reserved.
+*/
+"Detailstitle"="User infor page";
+"homeMe" = "Me";
+"iphoneNumber" = "IPhone Nimber";
+"findOption" = "Find";
+"Wechart" = "Wechart";
+"DoneButton" = "Done";
+"BackButton" = "back";

@@ -16,22 +16,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        //设置导航的controller
         let UnserNav = UINavigationController(rootViewController: UnserInfoViewController())
         let homeNav = UINavigationController(rootViewController: HomeViewController())
         let nameNav = UINavigationController(rootViewController: NameViewController())
         let lookNav = UINavigationController(rootViewController: LookedViewController())
-        UnserNav.tabBarItem.title = "我"
-        nameNav.tabBarItem.title = "通讯录"
-        lookNav.tabBarItem.title = "发现"
-        homeNav.tabBarItem.title = "微信"
+        //每个导航显示的名称
+        UnserNav.tabBarItem.title = NSLocalizedString("homeMe", comment: "")
+        nameNav.tabBarItem.title = NSLocalizedString("iphoneNumber", comment: "")
+        lookNav.tabBarItem.title = NSLocalizedString("findOption", comment: "")
+        homeNav.tabBarItem.title = NSLocalizedString("Wechart", comment: "")
         
-        
+        //给导航添加图片
         UnserNav.tabBarItem.image = UIImage(named: "userinfo")
         nameNav.tabBarItem.image = UIImage(named: "tongxunlu")
         lookNav.tabBarItem.image = UIImage(named: "faxian")
         homeNav.tabBarItem.image = UIImage(named: "home")
-        
-        
+        lookNav.tabBarItem.badgeValue="100"
+        homeNav.tabBarItem.badgeValue = "10"
         let tabBarController = UITabBarController()
         tabBarController.viewControllers = [homeNav,nameNav,lookNav, UnserNav]
         

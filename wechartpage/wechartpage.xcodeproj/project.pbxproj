@@ -18,6 +18,9 @@
 		04870EEB21E4871900E996A7 /* wechartpageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04870EEA21E4871900E996A7 /* wechartpageUITests.swift */; };
 		04870EF921E4874400E996A7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04870EF821E4874400E996A7 /* HomeViewController.swift */; };
 		04870EFB21E4876200E996A7 /* UnserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04870EFA21E4876200E996A7 /* UnserInfoViewController.swift */; };
+		04AD70C421F16CFF0071F6AD /* detailspage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD70C321F16CFF0071F6AD /* detailspage.swift */; };
+		04AD70C621F179BB0071F6AD /* donepage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD70C521F179BB0071F6AD /* donepage.swift */; };
+		04AD70DC21F1828B0071F6AD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04AD70DE21F1828B0071F6AD /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,12 @@
 		04870EEC21E4871900E996A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04870EF821E4874400E996A7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		04870EFA21E4876200E996A7 /* UnserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnserInfoViewController.swift; sourceTree = "<group>"; };
+		04AD70C321F16CFF0071F6AD /* detailspage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailspage.swift; sourceTree = "<group>"; };
+		04AD70C521F179BB0071F6AD /* donepage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = donepage.swift; sourceTree = "<group>"; };
+		04AD70D221F181930071F6AD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		04AD70D321F181930071F6AD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		04AD70DD21F1828B0071F6AD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		04AD70DF21F183630071F6AD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,12 +118,15 @@
 				04870ECC21E4871800E996A7 /* ViewController.swift */,
 				04870EF821E4874400E996A7 /* HomeViewController.swift */,
 				04870EFA21E4876200E996A7 /* UnserInfoViewController.swift */,
+				04AD70C521F179BB0071F6AD /* donepage.swift */,
 				04870ECE21E4871800E996A7 /* Main.storyboard */,
 				04870ED121E4871900E996A7 /* Assets.xcassets */,
 				04870ED321E4871900E996A7 /* LaunchScreen.storyboard */,
 				04870ED621E4871900E996A7 /* Info.plist */,
 				046DB36321E4E9510069EAAB /* NameViewController.swift */,
 				046DB36521E4E98C0069EAAB /* LookedViewController.swift */,
+				04AD70C321F16CFF0071F6AD /* detailspage.swift */,
+				04AD70DE21F1828B0071F6AD /* Localizable.strings */,
 			);
 			path = wechartpage;
 			sourceTree = "<group>";
@@ -223,6 +235,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 04870EBE21E4871800E996A7;
 			productRefGroup = 04870EC821E4871800E996A7 /* Products */;
@@ -242,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04870ED521E4871900E996A7 /* LaunchScreen.storyboard in Resources */,
+				04AD70DC21F1828B0071F6AD /* Localizable.strings in Resources */,
 				04870ED221E4871900E996A7 /* Assets.xcassets in Resources */,
 				04870ED021E4871800E996A7 /* Main.storyboard in Resources */,
 			);
@@ -272,6 +286,8 @@
 				04870ECD21E4871800E996A7 /* ViewController.swift in Sources */,
 				046DB36621E4E98C0069EAAB /* LookedViewController.swift in Sources */,
 				04870ECB21E4871800E996A7 /* AppDelegate.swift in Sources */,
+				04AD70C621F179BB0071F6AD /* donepage.swift in Sources */,
+				04AD70C421F16CFF0071F6AD /* detailspage.swift in Sources */,
 				04870EF921E4874400E996A7 /* HomeViewController.swift in Sources */,
 				046DB36421E4E9510069EAAB /* NameViewController.swift in Sources */,
 			);
@@ -313,6 +329,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				04870ECF21E4871800E996A7 /* Base */,
+				04AD70D221F181930071F6AD /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -321,8 +338,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				04870ED421E4871900E996A7 /* Base */,
+				04AD70D321F181930071F6AD /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		04AD70DE21F1828B0071F6AD /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04AD70DD21F1828B0071F6AD /* zh-Hans */,
+				04AD70DF21F183630071F6AD /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -332,6 +359,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -393,6 +421,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

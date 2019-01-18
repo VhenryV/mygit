@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  wechartpage
+
+  Created by mac on 2019/1/18.
+  Copyright © 2019 henry. All rights reserved.
+*/
+"Detailstitle"="用户详情页";
+"homeMe" = "我";
+"iphoneNumber" = "通讯录";
+"findOption" = "发现";
+"Wechart" = "微信";
+"DoneButton" = "完成";
+"BackButton" = "返回";
+
